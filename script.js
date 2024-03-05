@@ -1,38 +1,43 @@
-let myResume={
-    "basics": {
-      "name": "GOGULNATH B",
-      "email": "gogulnath6383@gamil.com",
-      "phone": 6383761578,
-      "degree": "Bsc",
-      "location": {
-        "address": "2/166 vaaniyarveethi anathur villupuram",
-        "postalCode": 607101,
-        "city": "villupuram",
-        "state": "Tamilnadu",
-        "country": "India"
-      },
-      
-    
-    "education": [
-      {
-        "institution": "joshep arts and science collage",
-        "department": "Bsc botany",
-        "studyType": "fulltime",
-        "batch start year": 2019,
-        "batch end year": 2022
-        
-      }
-    ],
-    "skills": [
-      {
-        "name": "python,javascript",
-        "level": "beginer",
-      }
-    ],
-    "languages": [
-      {
-        "language": "Tamil,English",
-      }
-    ],
-    
-  console.log(myResume);
+var json = [{
+    "id" : "gogul", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "gogulnatn6383@gmail.com"
+},
+{
+    "id" : "gogul", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "gogulnath6383@gmail.com"
+}];
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+  //console.log(json[key].msg);
+ 
+}
+}
+//for Of
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
+
+
+
+
